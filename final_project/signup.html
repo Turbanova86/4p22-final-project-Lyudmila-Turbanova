@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" type="text/css" href="./styleSU.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:300,regular,500,500italic,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="./index.html" class="logo"><h2>Кондитерская фабрика</h2></a>
+        </div>
+        <div class="logo__img">
+            <a href="./index.html"><img class="logo__img-pic" src="chocolate.png" width="150" height="50" alt="chocolate"></a>
+        </div>
+    </header>
+    <main>
+    <form class="form">
+        <div class="form__title">Регистрация</div>
+                <div class="form__email-error" id="email__error"></div>
+            <input class="form__email-input" id="email" name="email" type="email" placeholder="Введите email">
+                <div class="form__password-error" id="password__error"></div>
+            <input class="form__password-input" id="password" name="password" type="password" placeholder="Введите пароль">
+                <div class="form__password-confirm-error" id="password-confirm__error"></div>
+            <input class="form__password-confirm-input" id="password-confirm" name="password" type="password" placeholder="Подтвердите пароль">   
+        <div class="form__radio">
+            <div class="form__radio-box">
+                    <input id="male" type="radio" name="radio" value="one">
+                    <label for="male">Мужчина</label>
+            </div>
+            <div class="form__radio-box">
+                <input id="female" type="radio" name="radio" value="two">
+                <label for="female">Женщина</label>
+            </div>
+        </div>
+            <textarea class="form__textarea-block" id="textarea" name="textarea" placeholder="Расскажите о себе..."></textarea>
+        <div class="form__checkbox">
+            <input id="checkbox" type="checkbox" name="check" value="ONE"></input>
+            <label for="checkbox">Я согласен получать обновления на почту</label>
+        </div>
+        <button id="btn" class="form__button">Готово</button>
+        <script src="scriptSU.js"></script>
+    </form>
+    </main>
+</body>
+</html>

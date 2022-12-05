@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    height:calc(130 / 1440 * 100vw);
+    width: 100vw;
+    position: fixed;
+    padding-top: calc(20 / 1440 * 100vw);
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: calc(30 / 1440* 100vw);
+}
+
+h2 {
+    margin: 0px;
+    font-family: 'Taprom', cursive;
+    font-size: 2.1vw;
+    line-height: 1.3;
+    margin: 0px 0px 0px 7px;
+}
+
+h3 {
+    margin-top: calc(10 / 1440 * 100vw);
+    margin-bottom: calc(20 / 1440 * 100vw);
+    margin-left: calc(145 / 1440 * 100vw);
+    font-size: 1.8vw;
+}
+h4 {
+    line-height: 1.5;
+    margin: 0px 0px 0px 7px;
+    font-size: 1.5vw;
+}
+
+h6 {
+    margin: 0px 0px 0px 7px;
+    font-size: 1vw;
+}
+
+p {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.people {
+    padding-left: calc(30 / 1440 * 100vw);
+    padding-right: calc(55 / 1440 * 100vw);
+}
+
+.people__img {
+    width: calc(40 / 1440 * 100vw);
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+}
+
+.logo__img-pic {
+    width: calc(180 / 1440 * 100vw);
+    height: calc(60 / 1440 * 100vw);
+}
+
+.tools {
+    display: flex;
+    margin-left: calc(470 / 1440 * 100vw);
+    margin-top: calc(-50 / 1440 * 100vw);
+    align-items: center;
+}
+
+.tools__search {
+    position: absolute;
+    top: calc(33 / 1440 * 100vw);
+    left: calc(680 / 1440 * 100vw);
+    height: calc(50 / 1440 * 100vw);
+    width: calc(410 / 1440 * 100vw);
+    outline: none;
+    padding-top: calc(4 / 1440 * 100vw);
+    padding-bottom: calc(4 / 1440 * 100vw);
+    font-size: 1.7vw;
+}
+
+.tools__search::placeholder {
+    font-size: 1.7vw;
+    padding-top: calc(4 / 1440 * 100vw);
+    padding-bottom: calc(4 / 1440 * 100vw);
+}
+
+.tools__find {
+    position: absolute;
+    top:calc(43 / 1440 * 100vw);
+    left: calc(985 / 1440 * 100vw);
+    width: calc(36 / 1440 * 100vw);
+}
+
+.find {
+    width: calc(99 / 1440 * 100vw);
+    height: calc(50 / 1440 * 100vw);
+    top: calc(33 / 1440 * 100vw);
+    position: absolute;
+    background: #9c745d;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(90 / 1440 * 100vw);
+    padding-top: calc(200 / 1440 * 100vw);
+    background: #fefddd;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.item-container {
+    width: calc(240 / 1440 * 100vw);
+    height: 100%;
+    box-shadow: 0px 0px 10px 5px #ccc;
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+}
+
+.item-img {
+    width: 100%;
+}
+
+.item-price::after {
+    content: ' ₽';
+}
+
+.button {
+    width: calc(110 / 1440 * 100vw);
+    height: calc(45 / 1440 * 100vw);
+    color: white;
+    background: #9c745d;
+    cursor: pointer;
+    font-size: 1.4vw;
+    margin-left: calc(60 / 1440 * 100vw);
+    border: none;
+    border-radius: 2px;
+    margin-bottom: calc(15/ 1440 * 100vw);
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px 5px #ccc;
+    justify-content: center;
+}
+
+.box {
+    height: calc(170 / 1440 * 100vw);
+}
+
+.inner-heading {
+    text-align: center;
+}
+
+.form {
+    position: relative;
+    height: calc(345 / 1440 * 100vw);
+    width: calc(600 / 1440 * 100vw);
+    left: calc(420 / 1440 * 100vw);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
+    background-color: #c7c7bf;
+}
+
+.subscription {
+    display: inline-grid;
+    padding-left: calc(130 / 1440 * 100vw);
+}
+
+.subscription-button {
+    background: #8080809c;
+    width: calc(200 / 1440 * 100vw);
+    font-size: 1.3vw;
+}
+
+.subscription-name, .subscription-email {
+    width: calc(300 / 1440 * 100vw);
+    height: calc(29 / 1440 * 100vw);
+    font-size: 1.1vw;
+    outline:none;
+    border-radius: calc(4 / 1440 * 100vw);
+}
+
+.contacts {
+    display: flex;
+    padding-left: calc(30 / 1440 * 100vw);
+}
+
+.connect {
+    margin-top: 20px;
+}
+
+.connect__title {
+    text-align: center;
+}
+
+
+#phone {
+    width: 10%;
+}
+
+#mail {
+    width: 10%;
+}
+
+#address {
+    width: 10%;
+
+}
+.map {
+    width: 20vw;
+    height: 20vh;
+}
